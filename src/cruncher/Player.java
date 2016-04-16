@@ -55,6 +55,24 @@ public class Player
 			case RB :
 				toReturn += "RB";
 				break;
+			case WR :
+				toReturn += "WR";
+				break;
+			case TE :
+				toReturn += "TE";
+				break;
+			case DST :
+				toReturn += "DST";
+				break;
+			case K :
+				toReturn += "K";
+				break;
+			case IDP :
+				toReturn += "IDP";
+				break;
+			case HC :
+				toReturn += "HC";
+				break;
 		}
 		return (toReturn);
 	}
