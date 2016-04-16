@@ -34,6 +34,11 @@ public class Player
 		return (myStats);
 	}
 	
+	public int[] getStatsForWeek(int weekCode)
+	{
+		return (myStats.getStatsForWeek(weekCode));
+	}
+	
 	public int getStat(int weekCode, int statCode)
 	{
 		return (myStats.getStat(weekCode, statCode));
@@ -56,4 +61,10 @@ public class Player
 	
 	public static final int QB = 0;
 	public static final int RB = 1;
+	public static final int WR = 2;
+	public static final int TE = 3;
+	public static final int DST = 4;
+	public static final int K = 5;
+	public static final int IDP = 6;
+	public static final int HC = 7;
 }

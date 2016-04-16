@@ -10,6 +10,11 @@ public class Stats
 		myNums = new int[17][20];
 	}
 	
+	public int[] getStatsForWeek(int weekCode)
+	{
+		return (myNums[weekCode]);
+	}
+	
 	public int getStat(int weekCode, int statCode)
 	{
 		return (myNums[weekCode][statCode]);
