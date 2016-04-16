@@ -9,6 +9,35 @@ public class Stats
 	{
 		myNums = new int[17][20];
 	}
+	
+	public int getStat(int weekCode, int statCode)
+	{
+		return (myNums[weekCode][statCode]);
+	}
+
+	public void setStat(int weekCode, int statCode, int aStat)
+	{
+		myNums[weekCode][statCode] = aStat;
+	}
+
+	// weeks
+	public static final int WEEK_1 = 0;
+	public static final int WEEK_2 = 1;
+	public static final int WEEK_3 = 2;
+	public static final int WEEK_4 = 3;
+	public static final int WEEK_5 = 4;
+	public static final int WEEK_6 = 5;
+	public static final int WEEK_7 = 6;
+	public static final int WEEK_8 = 7;
+	public static final int WEEK_9 = 8;
+	public static final int WEEK_10 = 9;
+	public static final int WEEK_11 = 10;
+	public static final int WEEK_12 = 11;
+	public static final int WEEK_13 = 12;
+	public static final int WEEK_14 = 13;
+	public static final int WEEK_15 = 14;
+	public static final int WEEK_16 = 15;
+	public static final int WEEK_17 = 16;
 
 	// passing
 	public static final int PASSING_YARDS = 0;
