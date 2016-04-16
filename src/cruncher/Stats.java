@@ -1,5 +1,5 @@
 
-package CruncherBasics;
+package cruncher;
 
 public class Stats
 {
