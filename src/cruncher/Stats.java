@@ -7,7 +7,7 @@ public class Stats
 	
 	public Stats()
 	{
-		myNums = new int[17][20];
+		myNums = new int[17][25];
 	}
 	
 	public int[] getStatsForWeek(int weekCode)
