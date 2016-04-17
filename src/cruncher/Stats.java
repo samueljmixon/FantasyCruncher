@@ -1,20 +1,27 @@
 
 package cruncher;
 
+/**
+ * The Stats class stores a Player's statistics in each of the 135 fantasy
+ * football statistical categories for each of the weeks of the season.
+ * 
+ * @author sjmixon@g.clemson.edu
+ * @version 17 April 2016
+ */
 public class Stats
 {
 	private int[][] myNums;
-	
+
 	public Stats()
 	{
 		myNums = new int[SEASON_LENGTH][BASIC_STATS + VAR_STATS];
 	}
-	
+
 	public int[] getStatsForWeek(int weekCode)
 	{
 		return (myNums[weekCode]);
 	}
-	
+
 	public int getStat(int weekCode, int statCode)
 	{
 		return (myNums[weekCode][statCode]);
@@ -24,7 +31,7 @@ public class Stats
 	{
 		myNums[weekCode][statCode] = aStat;
 	}
-	
+
 	// constants
 	public static final int SEASON_LENGTH = 17;
 	public static final int BASIC_STATS = 124;
@@ -95,7 +102,7 @@ public class Stats
 	public static final int EACH_FUMBLE_LOST = 29;
 	public static final int EVERY_N_KICKOFF_RETURN_YARDS = 131;
 	public static final int EVERY_N_PUNT_RETURN_YARDS = 132;
-	
+
 	// kicking
 	public static final int EACH_PAT_MADE = 30;
 	public static final int EACH_PAT_ATTEMPTED = 31;
@@ -112,7 +119,7 @@ public class Stats
 	public static final int FG_MISSED_0 = 42;
 	public static final int FG_MISSED_40 = 43;
 	public static final int FG_MISSED_50 = 44;
-	
+
 	// punting
 	public static final int EVERY_PUNT = 45;
 	public static final int EVERY_PUNTING_YARD = 46;
@@ -130,7 +137,7 @@ public class Stats
 	public static final int PUNT_AVG_40 = 58;
 	public static final int PUNT_AVG_42 = 59;
 	public static final int PUNT_AVG_44 = 60;
-	
+
 	// individual defensive players
 	public static final int INTERCEPTION_RETURN_TD_IDP = 61;
 	public static final int FUMBLE_RETURN_TD_IDP = 62;
@@ -145,7 +152,7 @@ public class Stats
 	public static final int PASSES_DEFENDED_IDP = 71;
 	public static final int EVERY_N_SACKS = 133;
 	public static final int EVERY_N_TOTAL_TACKLES = 134;
-	
+
 	// team defense / special teams
 	public static final int EACH_KICKOFF_RETURN_YARD_DST = 72;
 	public static final int EACH_PUNT_RETURN_YARD_DST = 73;
@@ -183,7 +190,7 @@ public class Stats
 	public static final int YA_450_DST = 105;
 	public static final int YA_500_DST = 106;
 	public static final int YA_550_DST = 107;
-	
+
 	// head coach
 	public static final int TEAM_WIN = 108;
 	public static final int TEAM_LOSS = 109;

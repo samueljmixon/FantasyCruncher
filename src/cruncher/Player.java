@@ -1,49 +1,56 @@
 
 package cruncher;
 
+/**
+ * The Player class stores data about each fantasy football player, including
+ * name, position, and Stats.
+ * 
+ * @author sjmixon@g.clemson.edu
+ * @version 17 April 2016
+ */
 public class Player
 {
 	private String myName;
 	private int myPosition;
 	private Stats myStats;
-	
+
 	public Player(String aName, int aPosition)
 	{
 		myName = aName;
 		myPosition = aPosition;
 		myStats = new Stats();
 	}
-	
+
 	public void addStat(int weekCode, int statCode, int aStat)
 	{
 		myStats.setStat(weekCode, statCode, aStat);
 	}
-	
+
 	public String getName()
 	{
 		return (myName);
 	}
-	
+
 	public int getPosition()
 	{
 		return (myPosition);
 	}
-	
+
 	public Stats getStats()
 	{
 		return (myStats);
 	}
-	
+
 	public int[] getStatsForWeek(int weekCode)
 	{
 		return (myStats.getStatsForWeek(weekCode));
 	}
-	
+
 	public int getStat(int weekCode, int statCode)
 	{
 		return (myStats.getStat(weekCode, statCode));
 	}
-	
+
 	public String toString()
 	{
 		String toReturn = myName + ", ";
@@ -76,7 +83,8 @@ public class Player
 		}
 		return (toReturn);
 	}
-	
+
+	// positions
 	public static final int QB = 0;
 	public static final int RB = 1;
 	public static final int WR = 2;

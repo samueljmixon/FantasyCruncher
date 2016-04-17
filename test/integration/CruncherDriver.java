@@ -46,16 +46,24 @@ public class CruncherDriver
 		standard.addScoringValue(ScoringConfiguration.PASSING_YARDS_N, 25);
 		standard.addScoringValue(ScoringConfiguration.RUSHING_YARDS_N, 10);
 		
-		System.out.println("Foles: " + custom.computeScore(foles, Stats.WEEK_1));
-		System.out.println("McCoy: " + custom.computeScore(mccoy, Stats.WEEK_1));
-		System.out.println("Foles: " + custom.computeScore(foles, Stats.WEEK_2));
-		System.out.println("Lynch: " + custom.computeScore(lynch, Stats.WEEK_2));
+		System.out.println("Foles: " + custom.computeScore(foles,
+				Stats.WEEK_1));
+		System.out.println("McCoy: " + custom.computeScore(mccoy,
+				Stats.WEEK_1));
+		System.out.println("Foles: " + custom.computeScore(foles,
+				Stats.WEEK_2));
+		System.out.println("Lynch: " + custom.computeScore(lynch,
+				Stats.WEEK_2));
 		
 		System.out.println();
 		
-		System.out.println("Foles: " + standard.computeScore(foles, Stats.WEEK_1));
-		System.out.println("McCoy: " + standard.computeScore(mccoy, Stats.WEEK_1));
-		System.out.println("Foles: " + standard.computeScore(foles, Stats.WEEK_2));
-		System.out.println("Lynch: " + standard.computeScore(lynch, Stats.WEEK_2));
+		System.out.println("Foles: " + standard.computeScore(foles,
+				Stats.WEEK_1));
+		System.out.println("McCoy: " + standard.computeScore(mccoy,
+				Stats.WEEK_1));
+		System.out.println("Foles: " + standard.computeScore(foles,
+				Stats.WEEK_2));
+		System.out.println("Lynch: " + standard.computeScore(lynch,
+				Stats.WEEK_2));
 	}
 }
