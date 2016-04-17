@@ -27,12 +27,7 @@ public class ScoringConfiguration
 			int threshold = (int) myMultipliers[i + Stats.VAR_STATS];
 			if (threshold > 0)
 			{
-				System.out.println("myMultipliers[" + i + "]: " + myMultipliers[i]);
-				System.out.println("aPlayer.getStat(" + weekCode + ", " + i + "): " + aPlayer.getStat(weekCode, i));
-				System.out.println("threshold: " + threshold);
-				System.out.println("added vale: " + (myMultipliers[i] * (aPlayer.getStat(weekCode, i) / threshold)));
 				toReturn += myMultipliers[i] * (aPlayer.getStat(weekCode, i) / threshold);
-				System.out.println();
 			}
 		}
 		return (toReturn);
