@@ -33,15 +33,17 @@ public class Team
 	public String toString()
 	{
 		String toReturn = myName + "\n";
+		int i = 1;
 		for (Player[] pa : myPlayers)
 		{
 			if (pa[0] != null)
 			{
+				toReturn += "\tWeek " + i++ + "\n";
 				for (Player p : pa)
 				{
 					if (p != null)
 					{
-						toReturn += "\t" + p.toString() + "\n";
+						toReturn += "\t\t" + p.toString() + "\n";
 					}
 				}
 			}
