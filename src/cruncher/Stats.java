@@ -7,7 +7,7 @@ public class Stats
 	
 	public Stats()
 	{
-		myNums = new int[17][32];
+		myNums = new int[SEASON_LENGTH][BASIC_STATS + VAR_STATS];
 	}
 	
 	public int[] getStatsForWeek(int weekCode)
@@ -24,6 +24,11 @@ public class Stats
 	{
 		myNums[weekCode][statCode] = aStat;
 	}
+	
+	// constants
+	public static final int SEASON_LENGTH = 17;
+	public static final int BASIC_STATS = 124;
+	public static final int VAR_STATS = 11;
 
 	// weeks
 	public static final int WEEK_1 = 0;

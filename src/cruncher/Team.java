@@ -10,8 +10,8 @@ public class Team
 	public Team(String aName)
 	{
 		myName = aName;
-		myPlayers = new Player[17][16];
-		rosterCount = new int[16];
+		myPlayers = new Player[Stats.SEASON_LENGTH][ROSTER_SIZE];
+		rosterCount = new int[Stats.SEASON_LENGTH];
 	}
 	
 	public void addPlayer(Player aPlayer, int weekCode)
@@ -50,4 +50,6 @@ public class Team
 		}
 		return (toReturn);
 	}
+	
+	public static final int ROSTER_SIZE = 16;
 }
