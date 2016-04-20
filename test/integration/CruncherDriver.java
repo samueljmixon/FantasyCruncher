@@ -2,11 +2,23 @@
 package integration;
 
 import cruncher.*;
+import java.io.*;
+import java.net.*;
+import java.util.*;
+import parser.*;
 
 public class CruncherDriver
 {
-	public static void main(String[] args)
+	public static void main(String[] args) throws IOException
 	{
+		Parser parser = new Parser();
+		URL oracle = new URL("http://espn.go.com/fantasy/football/");
+		ArrayList<String> boobs = parser.readFile(oracle);
+		
+		for (String s : boobs)
+		{
+			System.out.println(s);
+		}
 		Team sam = new Team("Round Down for What");
 		
 		Player foles = new Player("Nick Foles", Player.QB);
