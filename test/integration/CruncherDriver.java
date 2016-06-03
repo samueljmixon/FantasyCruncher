@@ -9,7 +9,7 @@ public class CruncherDriver
 {
 	public static void main(String[] args) throws IOException
 	{
-		Parser myParser = new Parser("http://games.espn.go.com/ffl/leagueoffice?leagueId=186914&seasonId=2016");
+		Parser myParser = new Parser(186914, 2016);
 		myParser.parse();
 
 		Team sam = new Team("Round Down for What");

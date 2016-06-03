@@ -8,11 +8,26 @@ public class League
 	ScoringConfiguration mySC;
 	int teamCount;
 	
+	public League()
+	{
+		teamCount = 0;
+	}
+	
 	public League(String aName, int aSize)
 	{
 		myName = aName;
 		myTeams = new Team[aSize];
 		teamCount = 0;
+	}
+	
+	public void setName(String aName)
+	{
+		myName = aName;
+	}
+	
+	public void setSize(int aSize)
+	{
+		myTeams = new Team[aSize];
 	}
 	
 	public void setScoringConfiguration(ScoringConfiguration aSC)
