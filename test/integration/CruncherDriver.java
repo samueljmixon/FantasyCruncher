@@ -3,19 +3,14 @@ package integration;
 
 import cruncher.*;
 import java.io.*;
-import org.jsoup.*;
-import org.jsoup.nodes.*;
+import parser.*;
 
 public class CruncherDriver
 {
 	public static void main(String[] args) throws IOException
 	{
-		Document doc = Jsoup.connect("http://games.espn.go.com/ffl/leaders?&slotCategoryId=0").get(); 
-		String text = doc.body().text();
-		
-		PrintWriter writer = new PrintWriter("file.txt", "UTF-8");
-		writer.println(text);
-		writer.close();
+		Parser myParser = new Parser("http://games.espn.go.com/ffl/leagueoffice?leagueId=186914&seasonId=2016");
+		myParser.parse();
 
 		Team sam = new Team("Round Down for What");
 		
